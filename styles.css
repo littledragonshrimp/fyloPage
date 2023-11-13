@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  color: hsl(0, 0%, 100%);
+  background: hsl(217, 28%, 15%);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-left: 2rem;
+}
+nav ul li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+nav ul a {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul li:hover {
+  scale: 1.1;
+  color: hsl(176, 68%, 64%);
+}
+
+.preContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(217, 28%, 15%);
+  position: relative;
+}
+.preContainer .text {
+  background-color: hsl(218, 28%, 13%);
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.preContainer .text h1 {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 70%;
+  font-weight: 700;
+  line-height: 3rem;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.preContainer .text p {
+  margin: 2rem, 2rem, 2rem, 2rem;
+  line-height: 3rem;
+}
+.preContainer .text button {
+  margin-top: 2rem;
+  padding: 1.5rem 4rem 1.5rem 4rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  border: none;
+}
+.preContainer .text button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.preContainer .img1 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: -3rem;
+  z-index: 10;
+}
+
+.curvy {
+  width: 100%;
+  position: relative;
+  top: -20%;
+  right: 0;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+}
+
+.card {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.card p {
+  margin: auto;
+  margin-top: 2rem;
+  width: 85%;
+  line-height: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.card .productive {
+  width: 80%;
+}
+.card button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding: 1.5rem 6.5rem 1.5rem 6.5rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.1rem;
+}
+.card button:hover {
+  scale: 1.1;
+}
+.card .see {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: hsl(176, 68%, 64%);
+  border-bottom: 2px solid hsl(176, 68%, 64%);
+  padding-right: 0;
+}
+
+.quotes {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-bottom: -3rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background: hsl(218, 28%, 13%);
+  padding-top: 3rem;
+}
+.testimonials .testCard {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+.testimonials .testCard p {
+  margin: 2rem 2rem 1rem 2rem;
+  line-height: 2.2rem;
+}
+.testimonials .testCard img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 1rem -1rem 1rem 2rem;
+}
+.testimonials .testCard .profile {
+  display: flex;
+  flex-direction: row;
+}
+.testimonials .testCard .profileTitle {
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.testimonials .testCard .profileTitle h3 {
+  margin-left: 2rem;
+  margin-top: 0.4rem;
+  font-weight: 700;
+}
+.testimonials .testCard .profileTitle p {
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+
+.lastCard {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.lastCard h2,
+.lastCard p {
+  margin: 2rem;
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
+}
+.lastCard .inputAndButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.lastCard .inputAndButton input,
+.lastCard .inputAndButton button {
+  margin: 1rem auto 1rem auto;
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 2rem;
+  border: none;
+  width: 70%;
+}
+.lastCard button:hover {
+  scale: 1.1;
+}
+.lastCard .getStarted {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+}
+
+.footerSection {
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+.footerSection ul {
+  list-style: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.footerSection ul .footerPart2 {
+  margin: 0;
+}
+.footerSection li {
+  margin-top: 1rem;
+}
+.footerSection li:hover {
+  color: hsl(176, 68%, 64%);
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 1000px) {
+  *,
+  body,
+  img,
+  p,
+  h2,
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    padding: 4rem;
+  }
+  .img1 {
+    height: 26rem;
+    max-width: 36rem;
+    margin-bottom: -4rem;
+  }
+  .preContainer {
+    text-align: center;
+  }
+  .preContainer .text h1 {
+    bottom: 35%;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+  .preContainer .text p {
+    position: relative;
+    top: 0;
+    margin-top: -10%;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+  }
+  .preContainer .text button {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .cardContainer .card {
+    max-height: 30rem;
+    margin-bottom: -4rem;
+  }
+  .cardContainer .curvy-mobile {
+    background-image: url(images/bg-curvy-desktop.svg);
+    width: 100%;
+    height: 10rem;
+  }
+  .card6 {
+    display: flex;
+    flex-direction: row;
+    grid-area: 3/1/4/3;
+    text-align: left;
+  }
+  .card6 {
+    margin-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .card6 img {
+    margin-top: 0rem;
+    max-width: 40rem;
+  }
+  .card6 h2 {
+    margin-top: 3rem;
+    width: 40%;
+    min-width: 300px;
+    font-size: 1.8rem;
+  }
+  .card6 p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  .card6 .cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    margin-left: 3rem;
+  }
+  .card6 .cardText h2,
+  .card6 .cardText p,
+  .card6 .cardText a {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card6 .cardText a {
+    text-decoration-line: underline;
+    border: none;
+  }
+  .quotes {
+    margin-top: 10rem;
+    margin-bottom: -3rem;
+  }
+  .testimonials {
+    width: 100%;
+    flex-direction: row;
+  }
+  .testimonials .testCard {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 30%;
+    border-radius: 0.5rem;
+  }
+  .footerSection {
+    padding-top: 15rem;
+    z-index: -1;
+  }
+  .footerSection img {
+    padding-right: 2rem;
+  }
+  .footerSection ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .footerSection .footerPart2 {
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .lastCard {
+    margin-top: -2rem;
+    position: relative;
+    bottom: -10rem;
+    width: 60%;
+  }
+  .lastCard .inputAndButton {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+    padding: 2rem;
+  }
+  .lastCard .inputAndButton input {
+    width: 60%;
+    margin: auto;
+    margin-left: 2rem;
+  }
+  .lastCard .inputAndButton .getStarted {
+    padding: 0;
+    margin: auto;
+    margin-right: 2rem;
+    width: 25%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
