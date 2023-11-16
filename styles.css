@@ -127,7 +127,7 @@ nav ul li:hover {
   flex-direction: column;
   text-align: center;
 }
-.card img {
+.card .cardImg {
   width: 100px;
   margin-top: 6rem;
   margin-left: auto;
@@ -169,7 +169,6 @@ nav ul li:hover {
   font-size: 18px;
   text-decoration: none;
   color: hsl(176, 68%, 64%);
-  border-bottom: 2px solid hsl(176, 68%, 64%);
   padding-right: 0;
 }
 
@@ -177,6 +176,26 @@ nav ul li:hover {
   margin-top: 2rem;
   margin-left: 4rem;
   margin-bottom: -3rem;
+}
+
+.see {
+  line-height: 2rem;
+  width: 18rem;
+}
+.see img {
+  margin-top: 1rem;
+  width: 4rem;
+}
+.see p {
+  margin-left: 2rem;
+  -webkit-text-decoration: underline solid hsl(176, 68%, 64%);
+          text-decoration: underline solid hsl(176, 68%, 64%);
+  margin-right: 0;
+}
+
+.see:hover {
+  scale: 1.1;
+  transition: 0.3s;
 }
 
 .testimonials {
@@ -277,6 +296,7 @@ footer {
   padding: 2rem;
 }
 .footerSection ul {
+  margin-left: 2rem;
   list-style: none;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -506,5 +526,9 @@ footer {
     width: 25%;
     height: 3rem;
     font-size: 1rem;
+  }
+  .arrow {
+    width: 2rem;
+    margin-left: -4rem;
   }
 }/*# sourceMappingURL=styles.css.map */

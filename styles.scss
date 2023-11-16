@@ -144,7 +144,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  img {
+  .cardImg {
     width: 100px;
     margin-top: 6rem;
     margin-left: auto;
@@ -188,7 +188,6 @@ nav {
     font-size: 18px;
     text-decoration: none;
     color: $cyan;
-    border-bottom: 2px solid $cyan;
     padding-right: 0;
   }
 }
@@ -196,6 +195,25 @@ nav {
   margin-top: 2rem;
   margin-left: 4rem;
   margin-bottom: -3rem;
+}
+
+.see {
+  line-height: 2rem;
+  width: 18rem;
+  img {
+    margin-top: 1rem;
+    width: 4rem;
+  }
+  p {
+    margin-left: 2rem;
+    text-decoration: underline solid $cyan;
+    margin-right: 0;
+  }
+}
+
+.see:hover {
+  scale: 1.1;
+  transition: 0.3s;
 }
 
 .testimonials {
@@ -301,6 +319,7 @@ footer {
 
   padding: 2rem;
   ul {
+    margin-left: 2rem;
     list-style: none;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -551,5 +570,10 @@ footer {
         font-size: 1rem;
       }
     }
+  }
+
+  .arrow {
+    width: 2rem;
+    margin-left: -4rem;
   }
 }
